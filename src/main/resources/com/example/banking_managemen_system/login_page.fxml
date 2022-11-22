@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banking_managemen_system.login_page_controller">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="433.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\bg2.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="433.0" endY="83.09998321533203" layoutY="-3.0" startX="1.220703143189894E-5" startY="83.09999084472656" strokeWidth="0.5" />
+      <Label layoutX="97.0" layoutY="108.0" text="Login ID" textFill="#2e2e2e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="170.0" text="Password" textFill="#2e2e2e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="123.0" layoutX="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\bank final 2.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="login_id" layoutX="80.0" layoutY="131.0" prefHeight="29.0" prefWidth="266.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="login_password" layoutX="77.0" layoutY="195.0" prefHeight="29.0" prefWidth="266.0" />
+      <Button fx:id="login_button" layoutX="78.0" layoutY="323.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="266.0" style="-fx-background-color: #3d7a00; -fx-opacity: 0.7;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="ArtifaktElement-Black" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="forgotpass_button" layoutX="236.0" layoutY="429.0" mnemonicParsing="false" onAction="#forgotpass" style="-fx-background-color: opaque;" text="Forgot your password?" textFill="#3d7a00">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="37.0" fitWidth="434.0" layoutX="-1.0" layoutY="494.0" pickOnBounds="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\download (5).png" />
+         </image>
+      </ImageView>
+      <Line endX="213.50001525878906" endY="441.79998779296875" layoutX="5.0" layoutY="58.0" startX="213.50003051757812" startY="460.60003662109375" stroke="WHITE" />
+      <Label layoutX="145.0" layoutY="499.0" text="Contact Us" textFill="WHITE" />
+      <Label layoutX="241.0" layoutY="501.0" text="123456789" textFill="WHITE" />
+      <Label layoutX="104.0" layoutY="240.0" text="VERIFICATION" textFill="#e30505">
+         <font>
+            <Font name="Artifakt Element Book Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="captcha" alignment="CENTER" layoutX="239.0" layoutY="241.0" prefHeight="29.0" prefWidth="88.0" style="-fx-background-color: black;" text="0000" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="captcha_check" layoutX="224.0" layoutY="280.0" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutX="76.0" layoutY="281.0" text="Enter the number above :" textFill="#3d7a00">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="79.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\icons8-login-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="222.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\icons8-telephone-receiver-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="31.0" layoutX="78.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\icons8-captcha-58.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="77.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\icons8-password-window-48.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signup_button" layoutX="78.0" layoutY="393.0" mnemonicParsing="false" onAction="#signup" prefHeight="29.0" prefWidth="266.0" style="-fx-background-color: #8d8d8d;" text="Sign-Up" textFill="WHITE">
+         <font>
+            <Font name="ArtifaktElement-Black" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="203.0" layoutY="374.0" text="OR" textFill="#3d7a00">
+         <font>
+            <Font name="Artifakt Element Book Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="signin_error" layoutX="79.0" layoutY="361.0" prefHeight="11.0" prefWidth="216.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="captcha_error" layoutX="227.0" layoutY="305.0" prefHeight="15.0" prefWidth="145.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="Date_time_label" layoutX="191.0" layoutY="467.0" prefHeight="25.0" prefWidth="234.0" text="Current date time">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="171.0" layoutY="469.0" pickOnBounds="true">
+         <image>
+            <Image url="C:\Users\Lenovo\IdeaProjects\banking_managemen_system\.idea\images\icons8-date-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
